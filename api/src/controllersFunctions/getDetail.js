@@ -1,8 +1,8 @@
 const {getAllPokemons} = require('./getAllPokemons')
 
 
-//Esta Funcion Filtra los datos dependiendo de del tipo de info que reecibe de prop
-//Con GET_ID filtro por iD y traigo sus datos
+//Esta Funcion Filtra los datos dependiendo del tipo de info que recibe de prop
+//Con GET_ID filtro por ID y traigo sus datos
 //Con GET_NAME filtro por name y traigo sus datos
 
 const getDetail = async (detail, response)=>{
