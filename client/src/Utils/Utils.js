@@ -1,0 +1,6 @@
+export const GET_POKEMONS = "http://localhost:3001/pokemonRoute"
+export const GET_DATA= "http://localhost:3001/pokemonRoute/"
+export const GET_NAME= "http://localhost:3001/pokemonRoute?name="
+export const GET_POKEMONSDB = "http://localhost:3001/pokemonRoute/DB"
+export const GET_POKEMONSAPI = "http://localhost:3001/pokemonRoute/API"
+export const GET_TYPE = "http://localhost:3001/typeRoute"

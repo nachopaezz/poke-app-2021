@@ -1,0 +1,49 @@
+.container{
+    padding: 2px;
+     margin: 3px;
+     font-family: 'Roboto',
+     sans-serif;
+     font-size: bold;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.BUTONMIN{
+    margin: 3px;
+    width: 30px;
+    height: 20px;
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: orange;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+}
+.BUTONMAX{
+    margin: 3px;
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: orange;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.Select{
+    border-radius: 15px;
+
+
+}

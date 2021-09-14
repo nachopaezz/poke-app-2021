@@ -1,0 +1,86 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  background-image: url("https://www.xtrafondos.com/wallpapers/personajes-de-pokemon-unite-8255.jpg");
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  color: white;
+}
+
+.Form {
+  font-size: 12px;
+  height: 450px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(83, 124, 221);
+  border-radius: 10px 100px 10px 100px;
+  padding: 20px;
+  border-left: 20px solid;
+  border-bottom: 10px solid;
+  border-color: rgb(71, 88, 131);
+}
+
+.containerInput {
+  padding-left: 30px;
+  margin: 10px;
+  display: flex;
+  background-color: rgb(71, 88, 131);
+  height: 30px;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 20px 5px 20px;
+  border-left: 2px solid;
+  border-bottom: 1px solid;
+  border-color: white;
+}
+.Inputs {
+  margin-left: 20px;
+  border-radius: 4px 15px 4px 15px;
+  border: none;
+  outline: none;
+}
+
+.containerButon {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  background-color: rgb(71, 88, 131);
+  border-radius: 15px 15px 15px 15px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-color: white;
+}
+
+.BUTON {
+  margin: 10px;
+  border-radius: 15px 15px 15px 15px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-color: gray;
+}
+
+.PushButon {
+  margin-left: 130px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  border-color: white;
+  background-color: rgb(72, 134, 49);
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.PushButon:hover {
+  background-color: greenyellow;
+  box-shadow: 0px 15px 20px rgba(85, 90, 54, 0.582);
+  color:rgb(46,96,27);
+  transform: translateY(-2px);
+}

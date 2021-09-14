@@ -1,0 +1,23 @@
+.Pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.button {
+    width: 30px;
+    height: 20px;
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: orange;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,128 @@
+.container {
+    height: 90vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-size: 100%;
+    
+}
+
+.panel{
+    height: 450px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #b81f21f3;
+    border-radius: 15px;
+    padding: px 0;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-color: gray;
+}
+
+.containerIMG {
+    margin-left: 100px;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d8e2dc;
+    border-radius: 15px 15px 15px 0;
+    border-left: 5px solid;
+    border-bottom: 5px solid;
+    border-color: gray;
+    /* padding: 32px 0; */
+}
+.pokemonImg {
+    padding-top: 25px;
+    height: 100px;
+    width: 150px;
+}
+
+.Top{
+    display: flex;
+}
+.Medium{
+    display: flex;
+    background-color: #2b2d42;
+    width: 500px;
+    justify-content: space-around;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+
+}
+.Bottom {
+    display: flex;
+    background-color: #2b2d42;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.Title{
+    background-color: #2b2d42;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Type{
+/* margin-left: 50px; */
+background-color: white;
+color: black;
+border-radius: 10px;
+width:80px;
+height: 25px;
+display: flex;
+justify-content: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: oblique;
+}
+
+.loading{
+    display: flex;
+    image-resolution:initial;
+    background-position: center;
+}
+.BODY{
+    display: flex;
+    justify-content: space-around
+}
+.HOME{
+    /* background-image: url("https://image.flaticon.com/icons/png/512/1946/1946488.png"); */
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #2b2d42;
+}
+.BUTTON{
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    width: 80px;
+    border-radius: 15px 15px 0px 0px;
+    border-style:hidden;
+}
+.ID{
+    background-color: #2b2d42;
+    padding: 5px;
+    margin:5px;
+    border-radius: 10px;
+    color: white;
+}
