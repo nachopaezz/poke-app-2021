@@ -1,4 +1,4 @@
-# Poke APP
+# Poke App
 
 <p align="left">
   <img height="150" src="./pokemon.png" />
@@ -6,74 +6,77 @@
 
 ## Objetivos del Proyecto
 
-- Construir una App utlizando React, Redux, Node y Sequelize.
-- Afirmar y conectar los conceptos aprendidos en la carrera.
-- Aprender mejores prácticas.
-- Aprender y practicar el workflow de GIT.
-- Usar y practicar testing.
+- Construir una App utilizando **React**, **Redux**, **Node** y **Sequelize**.
+- Afianzar y conectar los conceptos aprendidos en la carrera.
+- Aprender mejores prácticas en desarrollo.
+- Aprender y practicar el workflow de **GIT**.
+- Usar y practicar **testing**.
 
 ## Comenzando
 
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
+### 1. **Forkear** el repositorio
+Crea una copia del repositorio en tu cuenta.
 
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
+### 2. **Clonar** el repositorio
+Clona el repositorio en tu computadora para comenzar a trabajar.
 
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
+El proyecto incluye un **boilerplate** con la estructura general tanto del servidor como del cliente.
 
-Actualmente las versiónes necesarias son:
+### Requisitos previos
+Es necesario contar al menos con la última versión estable de **Node** y **NPM** para poder instalar correctamente las dependencias.
 
- * __Node__: 12.18.3 o mayor
- * __NPM__: 6.14.16 o mayor
+#### Versiones requeridas:
+- **Node**: 12.18.3 o mayor
+- **NPM**: 6.14.16 o mayor
 
-Para verificar que versión tienen instalada:
+Verifica las versiones instaladas con los siguientes comandos:
 
-> node -v
->
-> npm -v
-
-## BoilerPlate
-
-El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
-
-En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
-
-```
-DB_USER=usuariodepostgres
-DB_PASSWORD=passwordDePostgres
-DB_HOST=localhost
+```bash
+node -v
+npm -v
 ```
 
-Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
+## Boilerplate
 
-Adicionalmente será necesario que creen desde psql una base de datos llamada `pokemon`
+El boilerplate incluye dos carpetas:
+- **`api`**: Código del backend.
+- **`client`**: Código del frontend (creado con Create React App).
 
-El contenido de `client` fue creado usando: Create React App.
+### Configuración de la base de datos
+1. En la carpeta `api`, crea un archivo llamado `.env` con el siguiente contenido:
+
+   ```
+   DB_USER=usuariodepostgres
+   DB_PASSWORD=passwordDePostgres
+   DB_HOST=localhost
+   ```
+
+2. Reemplaza `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectar con **Postgres**.
+
+3. Crea una base de datos llamada `pokemon` en **psql**.
 
 ## Enunciado
 
-La idea general es crear una aplicación en la cual se puedan ver los distintos Pokemon utilizando la api externa [pokeapi](https://pokeapi.co/) y a partir de ella poder, entre otras cosas:
+### Objetivo
+Crear una aplicación en la cual puedas ver, buscar, filtrar y crear nuevos Pokémon utilizando la API externa [PokeAPI](https://pokeapi.co/).
 
-  - Buscar pokemons
-  - Filtrarlos / Ordenarlos
-  - Crear nuevos pokemons
+### Funcionalidades a Implementar
+- Buscar pokemons.
+- Filtrarlos y ordenarlos.
+- Crear nuevos pokemons.
 
-__IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados sino que deben realizarlo ustedes mismos. En particular alguno de los ordenamientos o filtrados debe si o si realizarse desde el frontend.
+> **IMPORTANTE**: Los filtrados y ordenamientos deben hacerse desde tu aplicación (no utilizar los endpoints de la API externa que ya devuelven resultados filtrados u ordenados). 
 
-### Únicos Endpoints/Flags que pueden utilizar
+### Endpoints Permitidos
 
-  - GET https://pokeapi.co/api/v2/pokemon
-  - GET https://pokeapi.co/api/v2/pokemon/{id}
-  - GET https://pokeapi.co/api/v2/pokemon/{name}
-  - GET https://pokeapi.co/api/v2/type
+- `GET https://pokeapi.co/api/v2/pokemon`
+- `GET https://pokeapi.co/api/v2/pokemon/{id}`
+- `GET https://pokeapi.co/api/v2/pokemon/{name}`
+- `GET https://pokeapi.co/api/v2/type`
 
-### Requerimientos mínimos:
+### Requerimientos Mínimos
 
-A continuación se detallaran los requerimientos mínimos para la aprobación del proyecto individial. Aquellos que deseen agregar más funcionalidades podrán hacerlo. En cuanto al diseño visual no va a haber wireframes ni prototipos prefijados sino que tendrán libertad de hacerlo a su gusto pero tienen que aplicar los conocimientos de estilos vistos en el curso para que quede agradable a la vista.
-
-__IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
-
-#### Tecnologías necesarias:
+#### Tecnologías Necesarias:
 - [ ] React
 - [ ] Redux
 - [ ] Express
@@ -81,81 +84,64 @@ __IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estil
 
 #### Frontend
 
-Se debe desarrollar una aplicación de React/Redux que contenga las siguientes pantallas/rutas.
+1. **Página Inicial**: Crear una landing page con:
+   - Imagen representativa del proyecto.
+   - Botón para ingresar al home.
 
-__Pagina inicial__: deben armar una landing page con
-- [ ] Alguna imagen de fondo representativa al proyecto
-- [ ] Botón para ingresar al home (`Ruta principal`)
+2. **Ruta Principal**:
+   - Input de búsqueda para encontrar Pokémon por nombre (búsqueda exacta).
+   - Área de listado con los primeros resultados, mostrando imagen, nombre y tipos.
+   - Botones para filtrar por tipo y por creación.
+   - Botones para ordenar alfabéticamente y por fuerza.
+   - Paginado de 12 pokemons por página (mostrar primeros 9 en la primera página).
 
-__Ruta principal__: debe contener
-- [ ] Input de búsqueda para encontrar pokemons por nombre (La búsqueda será exacta, es decir solo encontrará al pokemon si se coloca el nombre completo)
-- [ ] Área donde se verá el listado de pokemons. Al iniciar deberá cargar los primeros resultados obtenidos desde la ruta `GET /pokemons` y deberá mostrar su:
-  - Imagen
-  - Nombre
-  - Tipos (Electrico, Fuego, Agua, etc)
-- [ ] Botones/Opciones para filtrar por tipo de pokemon y por pokemon existente o creado por nosotros
-- [ ] Botones/Opciones para ordenar tanto ascendentemente como descendentemente los pokemons por orden alfabético y por fuerza
-- [ ] Paginado para ir buscando y mostrando los siguientes pokemons, 12 pokemons por pagina, mostrando los primeros 9 en la primer pagina.
+> **IMPORTANTE**: Los Pokémon deben ser obtenidos tanto de la API como de la base de datos. Limitar a 40 Pokémon en total.
 
-__IMPORTANTE__: Dentro de la Ruta Principal se deben mostrar tanto los pokemons traidos desde la API como así también las de la base de datos. Por otro lado, si revisan el endpoint que trae todos los pokemons verán que no muestra la información del pokemon sino una URL para hacer un subrequest y obtener los datos de allí. Tendrán que por cada pokemon que van a mostrar hacer otro request a esa URL para obtener su imagen y tipos. Debido a que esto puede hacer que la búsqueda sea muy lenta limitar el resultado total a 40 pokemons totales.
+3. **Ruta de Detalle de Pokémon**:
+   - Mostrar los mismos campos de la ruta principal.
+   - ID de Pokémon, estadísticas (vida, fuerza, defensa, velocidad).
+   - Altura y peso.
 
-__Ruta de detalle de Pokemon__: debe contener
-- [ ] Los campos mostrados en la ruta principal para cada pokemon (imagen, nombre y tipos)
-- [ ] Número de Pokemon (id)
-- [ ] Estadísticas (vida, fuerza, defensa, velocidad)
-- [ ] Altura y peso
+4. **Ruta de Creación**:
+   - Formulario controlado con los campos del detalle de Pokémon.
+   - Opción para seleccionar varios tipos.
+   - Botón para crear un nuevo Pokémon.
 
-__Ruta de creación__: debe contener
-- [ ] Un formulario __controlado__ con los campos mencionados en el detalle del pokemon
-- [ ] Posibilidad de seleccionar/agregar más de un tipo de pokemon
-- [ ] Botón/Opción para crear un nuevo pokemon
+#### Base de Datos
 
-#### Base de datos
+- **Pokemon**:
+  - ID (número único, no debe coincidir con un ID de la API).
+  - Nombre.
+  - Vida, Fuerza, Defensa, Velocidad, Altura, Peso.
 
-El modelo de la base de datos deberá tener las siguientes entidades (Aquellas propiedades marcadas con asterísco deben ser obligatorias):
+- **Tipo**:
+  - ID.
+  - Nombre.
 
-- [ ] Pokemon con las siguientes propiedades:
-  - ID (Número de Pokemon) * : No puede ser un ID de un pokemon ya existente en la API pokeapi
-  - Nombre *
-  - Vida
-  - Fuerza
-  - Defensa
-  - Velocidad
-  - Altura
-  - Peso
-- [ ] Tipo con las siguientes propiedades:
-  - ID
-  - Nombre
+La relación entre Pokémon y Tipos debe ser de muchos a muchos.
 
-La relación entre ambas entidades debe ser de muchos a muchos ya que un pokemon puede pertenecer a más de un tipo y, a su vez, un tipo puede incluir a muchos pokemons.
-
-__IMPORTANTE__: Pensar como modelar los IDs de los pokemons en la base de datos. Existen distintas formas correctas de hacerlo pero tener en cuenta que cuando hagamos click en alguno, este puede provenir de la API o de la Base de Datos por lo que cuando muestre su detalle no debería haber ambigüedad en cual se debería mostrar. Por ejemplo si en la API el pokemon `Bulbasaur` tiene id = 1 y en nuestra base de datos creamos un nuevo pokemon `Henry` con id = 1, ver la forma de diferenciarlos cuando querramos acceder al detalle del mismo.
+> **IMPORTANTE**: Asegúrate de diferenciar entre Pokémon existentes en la API y los creados por el usuario.
 
 #### Backend
 
-Se debe desarrollar un servidor en Node/Express con las siguientes rutas:
+El servidor debe incluir las siguientes rutas:
 
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
+1. **`GET /pokemons`**:
+   - Obtener lista de Pokémon desde PokeAPI.
+   - Devolver solo los datos necesarios para la ruta principal.
 
-- [ ] __GET /pokemons__:
-  - Obtener un listado de los pokemons desde pokeapi.
-  - Debe devolver solo los datos necesarios para la ruta principal
-- [ ] __GET /pokemons/{idPokemon}__:
-  - Obtener el detalle de un pokemon en particular
-  - Debe traer solo los datos pedidos en la ruta de detalle de pokemon
-  - Tener en cuenta que tiene que funcionar tanto para un id de un pokemon existente en pokeapi o uno creado por ustedes
-- [ ] __GET /pokemons?name="..."__:
-  - Obtener el pokemon que coincida exactamente con el nombre pasado como query parameter (Puede ser de pokeapi o creado por nosotros)
-  - Si no existe ningún pokemon mostrar un mensaje adecuado
-- [ ] __POST /pokemons__:
-  - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de pokemons por body
-  - Crea un pokemon en la base de datos
-- [ ] __GET /types__:
-  - Obtener todos los tipos de pokemons posibles
-  - En una primera instancia deberán traerlos desde pokeapi y guardarlos en su propia base de datos y luego ya utilizarlos desde allí
+2. **`GET /pokemons/{idPokemon}`**:
+   - Obtener detalle de un Pokémon (de PokeAPI o creado por el usuario).
 
+3. **`GET /pokemons?name="..."`**:
+   - Buscar Pokémon por nombre (exacto).
 
-#### Testing
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
+4. **`POST /pokemons`**:
+   - Recibir datos desde el formulario de creación y crear un nuevo Pokémon en la base de datos.
+
+5. **`GET /types`**:
+   - Obtener y almacenar todos los tipos de Pokémon desde PokeAPI.
+
+---
+
+¡Buena suerte con el desarrollo! 🚀
