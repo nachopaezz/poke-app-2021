@@ -4,17 +4,10 @@
   <img height="150" src="./pokemon.png" />
 </p>
 
-## Objetivos del Proyecto
-
-- Construir una App utilizando **React**, **Redux**, **Node** y **Sequelize**.
-- Afianzar y conectar los conceptos aprendidos en la carrera.
-- Aprender mejores prácticas en desarrollo.
-- Aprender y practicar el workflow de **GIT**.
-- Usar y practicar **testing**.
 
 ## Comenzando
 
-### 1. **Forkear** el repositorio
+### 1. **Forkear** el repo
 Crea una copia del repositorio en tu cuenta.
 
 ### 2. **Clonar** el repositorio
@@ -65,7 +58,6 @@ Crear una aplicación en la cual puedas ver, buscar, filtrar y crear nuevos Pok�
 - Filtrarlos y ordenarlos.
 - Crear nuevos pokemons.
 
-> **IMPORTANTE**: Los filtrados y ordenamientos deben hacerse desde tu aplicación (no utilizar los endpoints de la API externa que ya devuelven resultados filtrados u ordenados). 
 
 ### Endpoints Permitidos
 
@@ -76,7 +68,7 @@ Crear una aplicación en la cual puedas ver, buscar, filtrar y crear nuevos Pok�
 
 ### Requerimientos Mínimos
 
-#### Tecnologías Necesarias:
+#### Tecnologías:
 - [ ] React
 - [ ] Redux
 - [ ] Express
@@ -93,9 +85,7 @@ Crear una aplicación en la cual puedas ver, buscar, filtrar y crear nuevos Pok�
    - Área de listado con los primeros resultados, mostrando imagen, nombre y tipos.
    - Botones para filtrar por tipo y por creación.
    - Botones para ordenar alfabéticamente y por fuerza.
-   - Paginado de 12 pokemons por página (mostrar primeros 9 en la primera página).
-
-> **IMPORTANTE**: Los Pokémon deben ser obtenidos tanto de la API como de la base de datos. Limitar a 40 Pokémon en total.
+   - Paginado de 12 pokemons por página (mostrar primeros 9 en la primera página)..
 
 3. **Ruta de Detalle de Pokémon**:
    - Mostrar los mismos campos de la ruta principal.
@@ -141,7 +131,3 @@ El servidor debe incluir las siguientes rutas:
 
 5. **`GET /types`**:
    - Obtener y almacenar todos los tipos de Pokémon desde PokeAPI.
-
----
-
-¡Buena suerte con el desarrollo! 🚀
